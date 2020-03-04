@@ -52,6 +52,9 @@
 ;; You can also try 'gd' (or 'C-c g d') to jump to their definition and see how
 ;; they are implemented.
 
+;; core
+(remove-hook 'text-mode-hook 'auto-fill-mode)
+
 ;; lsp
 (setq read-process-output-max (* 1024 1024)) ;; 1mb
 (setq lsp-prefer-capf t)
@@ -59,3 +62,4 @@
 (require 'init-org)
 (require 'init-writing)
 (require 'init-dart)
+(require 'init-ui)

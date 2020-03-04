@@ -53,3 +53,5 @@
 (package! olivetti)
 (package! powerthesaurus)
 (package! dart-mode)
+(package! dimmer)
+(package! verb)
