@@ -44,4 +44,16 @@
 ;; HTTP
 (map! :map org-mode-map "C-c C-r" verb-command-map)
 
+;; Keys
+(map! :leader :desc "Agenda home" "oh"
+      '(lambda () (interactive) (org-agenda nil "h")))
+(map! :leader :desc "Open notes" "on"
+      '(lambda () (interactive)(find-file org-default-notes-file)))
+(map! :leader :desc "Open todos" "ot"
+      '(lambda () (interactive)(find-file org-default-todos-file)))
+(map! :leader :desc "Open ideas" "oi"
+      '(lambda () (interactive)(find-file org-default-ideas-file)))
+(map! :leader :desc "Open work" "ow"
+      '(lambda () (interactive)(find-file org-default-work-file)))
+
 (provide 'init-org)

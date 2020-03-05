@@ -31,7 +31,7 @@
 (setq org-default-notes-file (concat org-directory "agenda/notes.org"))
 (setq org-default-todos-file (concat org-directory "agenda/todos.org"))
 (setq org-default-ideas-file (concat org-directory "agenda/ideas.org"))
-(setq org-default-games-file (concat org-directory "agenda/games.org"))
+(setq org-default-work-file (concat org-directory "agenda/work.org"))
 
 (doom! :input
        ;;chinese
