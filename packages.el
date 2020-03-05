@@ -55,3 +55,5 @@
 (package! dart-mode)
 (package! dimmer)
 (package! verb)
+
+(package! ssh-agency)                   ; ssh in windows
