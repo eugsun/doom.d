@@ -62,4 +62,6 @@
 (require 'init-org)
 (require 'init-writing)
 (require 'init-dart)
+
+(require 'init-term)
 (require 'init-ui)
