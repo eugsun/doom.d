@@ -10,7 +10,7 @@
 (setq theme-autoswitch/light-theme 'doom-solarized-light)
 (setq theme-autoswitch/dark-theme 'doom-peacock)
 (setq theme-autoswitch/day-start-hour 6)
-(setq theme-autoswitch/day-end-hour 17)
+(setq theme-autoswitch/day-end-hour 16)
 (setq theme-autoswitch/sync-timer 300)
 (if (and theme-autoswitch (display-graphic-p))
     (progn
@@ -22,8 +22,11 @@
           (setq theme-autoswitch/now theme-autoswitch/dark-theme))
         (if (or (not (boundp 'current-theme)) (eq theme-autoswitch/now current-theme))
             nil
-          (setq current-theme theme-autoswitch/now))
-        (load-theme theme-autoswitch/now t)
+          (progn
+            (setq current-theme theme-autoswitch/now)
+            (load-theme theme-autoswitch/now t)
+            )
+          )
         )
       (run-with-timer 0 theme-autoswitch/sync-timer #'sync-theme-with-time)
       )
