@@ -10,9 +10,9 @@
     (setq olivetti-body-width 88)
   ;; TODO: Revisit when Emacs 27 fixes window-set-margins
   (setq olivetti-body-width 1.0))
-(add-hook 'text-mode-hook 'olivetti-mode)
-(add-hook 'olivetti-mode-hook 'set-reader-view)
-;; (add-hook 'text-mode-hook '(whitespace-mode nil))
+(add-hook 'text-mode-hook #'olivetti-mode)
+(add-hook 'message-mode-hook #'word-wrap-mode)
+(add-hook 'olivetti-mode-hook #'set-reader-view)
 
 ;; Spellcheck
 (when (executable-find "hunspell")
