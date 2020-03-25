@@ -57,3 +57,5 @@
 (package! verb)
 
 (package! ssh-agency)                   ; ssh in windows
+
+(package! ink-mode)

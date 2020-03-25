@@ -62,6 +62,8 @@
 (require 'init-org)
 (require 'init-writing)
 (require 'init-dart)
+(require 'init-ink)
+(require 'init-csharp)
 
 (require 'init-term)
 (require 'init-ui)
