@@ -6,7 +6,7 @@
 ;; Auto theme switch
 ;; -- Automatically switch between ligh and dark theme based on time of day
 (setq theme-autoswitch t)
-(setq theme-autoswitch/light-theme 'doom-solarized-light)
+(setq theme-autoswitch/light-theme 'doom-one-light)
 (setq theme-autoswitch/dark-theme 'doom-peacock)
 (setq theme-autoswitch/day-start-hour 6)
 (setq theme-autoswitch/day-end-hour 16)
@@ -23,12 +23,14 @@
             nil
           (progn
             (setq current-theme theme-autoswitch/now)
+            (setq doom-theme theme-autoswitch/now)
             (load-theme theme-autoswitch/now t)
             )
           )
         )
       (run-with-timer 0 theme-autoswitch/sync-timer #'sync-theme-with-time)
       )
+  (setq doom-theme theme-autoswitch/dark-theme)
   (load-theme theme-autoswitch/dark-theme t)
   )
 
