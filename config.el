@@ -59,6 +59,9 @@
 (setq read-process-output-max (* 1024 1024)) ;; 1mb
 (setq lsp-prefer-capf t)
 
+;; Editor
+(map! :leader :desc "Jump" "j" 'avy-goto-char-2)
+
 (require 'init-org)
 (require 'init-writing)
 (require 'init-dart)
