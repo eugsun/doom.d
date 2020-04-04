@@ -1,4 +1,4 @@
-;;; ~/.doom.d/custom/init-ui.el -*- lexical-binding: t; -*-
+;;; ~/.doom.d/custom/conf-ui.el -*- lexical-binding: t; -*-
 
 (setq dimmer-fraction 0.3)
 (dimmer-mode t)
@@ -38,4 +38,4 @@
 (when (member "WenQuanYi Micro Hei" (font-family-list))
   (set-fontset-font t '(#x4e00 . #x9fff) "WenQuanYi Micro Hei" ))
 
-(provide 'init-ui)
+(provide 'conf-ui)

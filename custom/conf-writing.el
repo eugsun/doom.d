@@ -1,4 +1,4 @@
-;;; ~/.doom.d/custom/init-writing.el -*- lexical-binding: t; -*-
+;;; ~/.doom.d/custom/conf-writing.el -*- lexical-binding: t; -*-
 
 (defun set-reader-view ()
   (+word-wrap-mode t)
@@ -28,4 +28,4 @@
 
 (add-hook! 'ink-mode-hook #'set-reader-view)
 
-(provide 'init-writing)
+(provide 'conf-writing)

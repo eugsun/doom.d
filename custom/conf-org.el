@@ -1,4 +1,4 @@
-;;; ~/.doom.d/custom/org.el -*- lexical-binding: t; -*-
+;;; ~/.doom.d/custom/conf-org.el -*- lexical-binding: t; -*-
 
 ;; Capture settings
 (setq custom-org-capture-templates
@@ -56,4 +56,4 @@
 (map! :leader :desc "Open work" "ow"
       '(lambda () (interactive)(find-file org-default-work-file)))
 
-(provide 'init-org)
+(provide 'conf-org)

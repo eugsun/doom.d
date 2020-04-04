@@ -25,7 +25,7 @@
 ;; available. You can either set `doom-theme' or manually load a theme with the
 ;; `load-theme' function. This is the default:
 ;;
-;; -- Being set in init-ui
+;; -- Being set in conf-ui
 ;; (setq doom-theme 'doom-one)
 
 ;; If you use `org' and don't want your org files in the default location below,
@@ -64,11 +64,11 @@
 ;; Editor
 (map! :leader :desc "Jump" "j" 'avy-goto-char-2)
 
-(require 'init-org)
-(require 'init-writing)
-(require 'init-dart)
-(require 'init-ink)
-(require 'init-csharp)
+(require 'conf-org)
+(require 'conf-writing)
 
-(require 'init-term)
-(require 'init-ui)
+(require 'conf-dart)
+(require 'conf-csharp)
+
+(require 'conf-term)
+(require 'conf-ui)

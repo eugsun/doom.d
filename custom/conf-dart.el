@@ -1,4 +1,4 @@
-;;; ~/.doom.d/custom/init-dart.el -*- lexical-binding: t; -*-
+;;; ~/.doom.d/custom/conf-dart.el -*- lexical-binding: t; -*-
 
 (after! dart-mode
   (setq dart-debug t)
@@ -15,4 +15,4 @@
   (advice-add 'dart-mode :after #'lsp)
   )
 
-(provide 'init-dart)
+(provide 'conf-dart)
