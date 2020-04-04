@@ -50,7 +50,6 @@
 ;; our package manager can't deal with; see raxod502/straight.el#279)
 ;(package! builtin-package :recipe (:branch "develop"))
 
-(package! olivetti)
 (package! powerthesaurus)
 (package! dart-mode)
 (package! dimmer)
@@ -59,3 +58,5 @@
 (package! ssh-agency)                   ; ssh in windows
 (package! ink-mode)
 (package! poetry)
+
+(package! visual-fill-column)
