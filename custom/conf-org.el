@@ -1,16 +1,28 @@
 ;;; ~/.doom.d/custom/conf-org.el -*- lexical-binding: t; -*-
 
+(setq org-directory "~/Dropbox/Private/org/")
+(setq org-agenda-files
+      (append
+       (file-expand-wildcards (concat org-directory "agenda/*.org"))
+       (file-expand-wildcards (concat org-directory "agenda/job/*.org"))
+       (file-expand-wildcards (concat org-directory "agenda/mobile/*.org"))
+      ))
+(setq org-agenda-notes-file (concat org-directory "agenda/notes.org"))
+(setq org-agenda-todos-file (concat org-directory "agenda/todos.org"))
+(setq org-agenda-ideas-file (concat org-directory "agenda/ideas.org"))
+(setq org-agenda-work-file (concat org-directory "agenda/work.org"))
+
 ;; Capture settings
 (setq custom-org-capture-templates
       `(
-        ("t" "Todo" entry (file+headline org-default-todos-file "Tasks")
+        ("t" "Todo" entry (file+headline org-agenda-todos-file "Tasks")
          ,(concat "* TODO %?\n"
                   "DEADLINE: %(org-insert-time-stamp (org-read-date nil t \"+1d\"))"
                   " SCHEDULED: %t\n%i")
          :prepend t)
-        ("n" "Note" entry (file+headline org-default-notes-file "Notes")
+        ("n" "Note" entry (file+headline org-agenda-notes-file "Notes")
          "* %?\nEntered on %U\n%i" :prepend t)
-        ("i" "Idea" entry (file+headline org-default-ideas-file "Ideas")
+        ("i" "Idea" entry (file+headline org-agenda-ideas-file "Ideas")
          "* %?\nEntered on %U\n%i" :prepend t)
         )
       )
@@ -48,12 +60,12 @@
 (map! :leader :desc "Agenda home" "oh"
       '(lambda () (interactive) (org-agenda nil "h")))
 (map! :leader :desc "Open notes" "on"
-      '(lambda () (interactive)(find-file org-default-notes-file)))
+      '(lambda () (interactive)(find-file org-agenda-notes-file)))
 (map! :leader :desc "Open todos" "ot"
-      '(lambda () (interactive)(find-file org-default-todos-file)))
+      '(lambda () (interactive)(find-file org-agenda-todos-file)))
 (map! :leader :desc "Open ideas" "oi"
-      '(lambda () (interactive)(find-file org-default-ideas-file)))
+      '(lambda () (interactive)(find-file org-agenda-ideas-file)))
 (map! :leader :desc "Open work" "ow"
-      '(lambda () (interactive)(find-file org-default-work-file)))
+      '(lambda () (interactive)(find-file org-agenda-work-file)))
 
 (provide 'conf-org)

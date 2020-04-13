@@ -21,17 +21,6 @@
 (setq save-place-file (concat user-emacs-directory ".places"))
 
 (add-to-list 'load-path "~/.doom.d/custom/")
-(setq org-directory "~/Dropbox/Private/org/")
-(setq org-agenda-files
-      (append
-       (file-expand-wildcards (concat org-directory "agenda/*.org"))
-       (file-expand-wildcards (concat org-directory "agenda/job/*.org"))
-       (file-expand-wildcards (concat org-directory "agenda/mobile/*.org"))
-      ))
-(setq org-default-notes-file (concat org-directory "agenda/notes.org"))
-(setq org-default-todos-file (concat org-directory "agenda/todos.org"))
-(setq org-default-ideas-file (concat org-directory "agenda/ideas.org"))
-(setq org-default-work-file (concat org-directory "agenda/work.org"))
 
 (doom! :input
        ;;chinese
