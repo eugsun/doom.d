@@ -63,6 +63,7 @@
 
 ;; Editor
 (map! :leader :desc "Jump" "j" 'avy-goto-char-2)
+(map! :nv "gb" 'pop-tag-mark)
 
 (require 'conf-org)
 (require 'conf-writing)
