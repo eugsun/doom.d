@@ -3,7 +3,7 @@
 (defun set-reader-view ()
   (+word-wrap-mode t)
   (setq line-spacing 4)
-  (setq visual-fill-column-width 88)
+  (setq visual-fill-column-width 90)
   )
 (add-hook 'text-mode-hook #'set-reader-view)
 (add-hook 'message-mode-hook #'set-reader-view)

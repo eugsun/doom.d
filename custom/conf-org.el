@@ -12,6 +12,9 @@
 (setq org-agenda-ideas-file (concat org-directory "agenda/ideas.org"))
 (setq org-agenda-work-file (concat org-directory "agenda/work.org"))
 
+(setq deft-directory org-directory)
+(setq deft-recursive t)
+
 ;; Capture settings
 (setq custom-org-capture-templates
       `(
@@ -30,6 +33,7 @@
 (after! org
   (dolist (template custom-org-capture-templates)
     (add-to-list 'org-capture-templates template))
+  (setq org-download-image-org-width 200)
   )
 
 ;; Agenda display
@@ -52,6 +56,28 @@
   (setq org-journal-file-type 'monthly)
   (setq org-journal-file-format "%Y%m.org")
   (setq org-journal-date-format "%A, %m/%d/%Y"))
+
+(defun five-minute-journal-entry ()
+  (insert "
+** 5-minute journal
+*** I'm grateful for
+1.
+2.
+3.
+*** What would make today great?
+1.
+2.
+3.
+*** Daily affirmations. I am
+*** 3 amazing things that happened today
+1.
+2.
+3.
+*** How could I have made today even better
+")
+  )
+(add-hook 'org-journal-after-entry-create-hook #'five-minute-journal-entry)
+
 
 ;; HTTP
 (map! :map org-mode-map "C-c C-r" verb-command-map)
