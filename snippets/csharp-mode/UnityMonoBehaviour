@@ -1,0 +1,23 @@
+# -*- mode: snippet -*-
+# name: UnityMonoBehaviour
+# key: monob
+# --
+public class $1 : MonoBehaviour
+{
+    $2
+
+    void Awake()
+    {
+
+    }
+
+    void Start()
+    {
+
+    }
+
+    void Update()
+    {
+
+    }
+}

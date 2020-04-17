@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: UnityScriptableObject
+# key: scripto
+# --
+[CreateAssetMenu()]
+public class $1 : ScriptableObject
+{
+    $2
+}

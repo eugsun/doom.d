@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: UsingUnity
+# key: usingu
+# --
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+$1
