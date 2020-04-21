@@ -57,9 +57,9 @@
   (setq org-journal-file-format "%Y%m.org")
   (setq org-journal-date-format "%A, %m/%d/%Y"))
 
-(defun five-minute-journal-entry ()
-  (insert "
-** 5-minute journal
+(setq five-min-template
+      "
+** 5-minute journal :5min:
 *** I'm grateful for
 1.
 2.
@@ -75,7 +75,11 @@
 3.
 *** How could I have made today even better
 ")
-  )
+
+(defun five-minute-journal-entry ()
+  (progn
+    (beginning-of-line)
+    (insert five-min-template)))
 (add-hook 'org-journal-after-entry-create-hook #'five-minute-journal-entry)
 
 
