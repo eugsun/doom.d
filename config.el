@@ -34,7 +34,7 @@
 
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
-(setq display-line-numbers-type t)
+(setq display-line-numbers-type nil)
 
 
 ;; Here are some additional functions/macros that could help you configure Doom:
@@ -65,6 +65,7 @@
 (map! :leader :desc "Jump" "j" 'avy-goto-char-2)
 (map! :nv "gb" 'pop-tag-mark)
 (setq highlight-indent-guides-method 'column)
+(setq doom-highlight-current-line nil)
 
 (require 'conf-org)
 (require 'conf-writing)

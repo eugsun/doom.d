@@ -1,7 +1,8 @@
 ;;; ~/.doom.d/custom/conf-ui.el -*- lexical-binding: t; -*-
 
-(setq dimmer-fraction 0.3)
-(dimmer-mode t)
+;; TODO: Dimmer is a bit too slow whenever focus is changed.
+;; (setq dimmer-fraction 0.3)
+;; (dimmer-mode t)
 
 ;; Auto theme switch
 ;; -- Automatically switch between ligh and dark theme based on time of day
@@ -9,7 +10,7 @@
 (setq theme-autoswitch/light-theme 'doom-one-light)
 (setq theme-autoswitch/dark-theme 'doom-peacock)
 (setq theme-autoswitch/day-start-hour 6)
-(setq theme-autoswitch/day-end-hour 16)
+(setq theme-autoswitch/day-end-hour 17)
 (setq theme-autoswitch/sync-timer 300)
 (if (and theme-autoswitch (display-graphic-p))
     (progn
