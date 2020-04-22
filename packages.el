@@ -60,3 +60,5 @@
 (package! poetry)
 
 (package! visual-fill-column)
+
+(package! hl-line :disable t)
