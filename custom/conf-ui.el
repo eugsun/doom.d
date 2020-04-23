@@ -24,16 +24,15 @@
             nil
           (progn
             (setq current-theme theme-autoswitch/now)
-            (setq doom-theme theme-autoswitch/now)
             (load-theme theme-autoswitch/now t)
             )
           )
         )
       (run-with-timer 0 theme-autoswitch/sync-timer #'sync-theme-with-time)
       )
-  (setq doom-theme theme-autoswitch/dark-theme)
   (load-theme theme-autoswitch/dark-theme t)
   )
+(load-theme theme-autoswitch/now t)
 
 ;; -- Chinese
 (when (member "WenQuanYi Micro Hei" (font-family-list))
