@@ -19,7 +19,7 @@
         (if (member theme-autoswitch/hour (number-sequence theme-autoswitch/day-start-hour theme-autoswitch/day-end-hour))
             (setq theme-autoswitch/now theme-autoswitch/light-theme)
           (setq theme-autoswitch/now theme-autoswitch/dark-theme))
-        (unless (and (boundp 'current-time) (eq theme-autoswitch/now current-theme))
+        (unless (and (boundp 'current-theme) (eq theme-autoswitch/now current-theme))
           (progn
             (setq current-theme theme-autoswitch/now)
             (load-theme theme-autoswitch/now t))))
