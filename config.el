@@ -64,8 +64,8 @@
 ;; Editor
 (map! :leader :desc "Jump" "j" 'avy-goto-char-2)
 (map! :nv "gb" 'pop-tag-mark)
-(setq highlight-indent-guides-method 'column)
-(setq doom-highlight-current-line nil)
+;; (setq highlight-indent-guides-method 'column)
+(setq highlight-indent-guides-mode -1)
 
 (require 'conf-org)
 (require 'conf-writing)
