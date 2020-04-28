@@ -58,21 +58,14 @@
   (setq org-journal-date-format "%A, %m/%d/%Y"))
 
 (setq five-min-template
-      "
-** 5-minute journal :5min:
+      "** 5-minute journal :5min:
 *** I'm grateful for
-1.
-2.
-3.
-*** What would make today great?
-1.
-2.
-3.
+*** What would make today great? [/]
+1. [ ]
+2. [ ]
+3. [ ]
 *** Daily affirmations. I am
-*** 3 amazing things that happened today
-1.
-2.
-3.
+*** Amazing things that happened today
 *** How could I have made today even better
 ")
 
