@@ -123,6 +123,9 @@
        ;;crystal           ; ruby at the speed of c
        (csharp            ; unity, .NET, and mono shenanigans
         +unity)
+       (dart
+        +lsp
+        +flutter)
        data              ; config/data formats
        ;;elixir            ; erlang done right
        ;;elm               ; care for a cup of TEA?
@@ -164,7 +167,8 @@
        ;;purescript        ; javascript, but functional
        (python            ; beautiful is better than ugly
         +lsp
-        +pyenv)
+        +pyenv
+        +poetry)
        ;;qt                ; the 'cutest' gui framework ever
        ;;racket            ; a DSL for DSLs
        ;;rest              ; Emacs as a REST client

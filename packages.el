@@ -51,14 +51,10 @@
 ;(package! builtin-package :recipe (:branch "develop"))
 
 (package! powerthesaurus)
-(package! dart-mode)
-;; (package! dimmer)
 (package! verb)
 
 (package! ssh-agency)                   ; ssh in windows
 (package! ink-mode)
-(package! poetry)
 
 (package! visual-fill-column)
-
 (package! hl-line :disable t)
