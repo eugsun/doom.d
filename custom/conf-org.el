@@ -65,8 +65,8 @@
 2. [ ]
 3. [ ]
 *** Daily affirmations. I am
-*** Amazing things that happened today
-*** How could I have made today even better
+*** Notable things that happened today
+*** How could I have made today better
 ")
 
 (defun five-minute-journal-entry ()
