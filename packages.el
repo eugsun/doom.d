@@ -57,4 +57,6 @@
 (package! ink-mode)
 
 (package! visual-fill-column)
+(package! easy-jekyll)
+
 (package! hl-line :disable t)
