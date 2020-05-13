@@ -2,7 +2,7 @@
 
 (defun set-reader-view ()
   (+word-wrap-mode t)
-  (setq line-spacing 4)
+  (setq line-spacing 8)
   (setq visual-fill-column-width 90)
   (setq text-scale-mode-amount 1.2)
   (text-scale-mode 1)
