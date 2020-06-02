@@ -106,4 +106,8 @@
 (map! :leader :desc "Open work" "ow"
       '(lambda () (interactive)(find-file org-agenda-work-file)))
 
+;; Org-roam
+(setq org-roam-db-location "~/org-roam.db")
+(setq org-roam-directory org-directory)
+
 (provide 'conf-org)
