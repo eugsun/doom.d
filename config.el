@@ -71,6 +71,7 @@
 
 (require 'conf-dart)
 (require 'conf-csharp)
+(require 'conf-python)
 
 (require 'conf-term)
 (require 'conf-ui)

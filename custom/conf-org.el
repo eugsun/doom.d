@@ -76,20 +76,8 @@
     (insert five-min-template)))
 (map! :leader
       :desc "Add 5-min journal entry" "njf" '(lambda () (interactive) (five-minute-journal-entry)))
-
-(defun org-journal-goto-today ()
-  ;; (setq now (decode-time nil))
-  ;; (setq time (encode-time now))
-  ;; (setq entry-path (org-journal-get-entry-path time))
-
-  (let* ((now (decode-time nil))
-         (time (encode-time now))
-         (entry-path (org-journal-get-entry-path time)))
-    (funcall org-journal-find-file entry-path)
-    )
-  )
 (map! :leader
-      :desc "Go to today's entry" "njt" '(lambda () (interactive) (org-journal-goto-today)))
+      :desc "Go to today's entry" "njt" '(lambda () (interactive) (org-journal-open-current-journal-file)))
 
 ;; HTTP
 (map! :map org-mode-map "C-c C-r" verb-command-map)

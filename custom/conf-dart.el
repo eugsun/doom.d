@@ -12,7 +12,6 @@
   ;; hooks. use flycheck instead of flymake
   (advice-add 'dart-mode :after #'flymake-mode-off)
   (advice-add 'dart-mode :after #'flycheck-mode-on-safe)
-  (advice-add 'dart-mode :after #'lsp)
   )
 
 (provide 'conf-dart)
