@@ -64,7 +64,7 @@
 1. [ ]
 2. [ ]
 3. [ ]
-*** Daily affirmations. I am
+*** Daily affirmations: I
 *** Notable things that happened today
 *** How could I have made today better
 ")
