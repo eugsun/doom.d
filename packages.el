@@ -60,3 +60,4 @@
 (package! easy-jekyll)
 
 (package! hl-line :disable t)
+(package! leetcode)

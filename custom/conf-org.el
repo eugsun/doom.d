@@ -14,6 +14,9 @@
 
 (setq deft-directory org-directory)
 (setq deft-recursive t)
+(setq deft-extensions '("org"))
+
+(setq org-html-htmlize-output-type nil)
 
 ;; Capture settings
 (setq custom-org-capture-templates
@@ -64,7 +67,7 @@
 1. [ ]
 2. [ ]
 3. [ ]
-*** Daily affirmations: I
+*** Daily affirmation
 *** Notable things that happened today
 *** How could I have made today better
 ")
